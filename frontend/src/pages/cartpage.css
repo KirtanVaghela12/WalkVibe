@@ -1,0 +1,145 @@
+.cart-container {
+  padding: 30px;
+  background-color: #cebebe;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.cart-heading {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.cart-empty {
+  font-size: 1.2rem;
+  color: #131212;
+}
+
+.cart-item-list {
+  display: grid;
+  gap: 20px;
+}
+
+.cart-item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #555;
+  border-radius: 10px;
+  background-color: #333;
+}
+
+.cart-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #999;
+}
+
+.cart-item-details {
+  flex: 1;
+}
+
+.cart-title {
+  margin: 0 0 5px;
+  font-size: 1.1rem;
+}
+
+.cart-text {
+  margin: 0 0 8px;
+  color: #ddd;
+}
+
+.cart-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.cart-btn {
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+.cart-remove-btn {
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: none;
+  background-color: #ff4d4f;
+  color: #fff;
+  cursor: pointer;
+}
+
+.cart-total {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: right;
+  margin-top: 30px;
+}
+
+.cod-wrapper {
+  margin-top: 25px;
+  background-color: #f0f0f0;
+  padding: 12px;
+  border-radius: 8px;
+  color: #000;
+}
+
+.cod-wrapper input[type='checkbox'] {
+  transform: scale(1.2);
+  margin-right: 8px;
+}
+
+.cod-confirm {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #e9ffe9;
+  border-left: 4px solid green;
+  color: #155724;
+  font-size: 14px;
+}
+
+.place-order-btn-wrapper {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.place-order-btn {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.place-order-btn:hover {
+  background-color: #218838;
+}
+
+@media (max-width: 600px) {
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .cart-buttons {
+    flex-wrap: wrap;
+  }
+
+  .place-order-btn-wrapper,
+  .cart-total {
+    text-align: center;
+  }
+}

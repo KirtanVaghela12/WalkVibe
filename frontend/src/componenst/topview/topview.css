@@ -1,0 +1,207 @@
+/* Container */
+.topview-container {
+  padding: 30px 15px;
+  background-color:	#e8f0fe; /* Light grey background for a clean look */
+  box-sizing: border-box;
+}
+
+
+/* Section Title */
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Main Layout */
+.main-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+/* Left: Categories */
+.left-column {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Men/Women Column */
+.vertical-image-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Category Card */
+.image-wrapper {
+  width: 280px;
+  text-decoration: none;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  background-color: #fff;
+}
+
+.image-wrapper:hover {
+  transform: scale(1.03);
+}
+
+/* Category Image */
+.category-column-image {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Category Label */
+.image-label {
+  padding: 12px 0;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  background-color: #f2f2f2;
+}
+
+/* Right: Offers Section */
+.right-column {
+  flex: 2;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Offers Grid */
+.offer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.add-to-cart-btn {
+  background-color: #333;
+  color: #fff;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 10px auto;
+  display: block;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #555;
+}
+
+
+/* Offer Card */
+.offer-card {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.offer-card:hover {
+  transform: scale(1.03);
+}
+
+/* Offer Image/Video */
+.offer-image,
+.offer-video {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+  border-radius: 0;
+}
+.offer-video {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* Offer Label */
+.offer-label {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(255, 0, 0, 0.8);
+  color: white;
+  padding: 8px 14px;
+  font-weight: bold;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .offer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .main-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vertical-image-column {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .image-wrapper {
+    width: 100%;
+  }
+
+  .category-column-image {
+    height: 160px;
+  }
+
+  .right-column {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .offer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .offer-image,
+  .offer-video {
+    height: 160px;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .offer-label {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+  }
+}

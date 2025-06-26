@@ -1,0 +1,36 @@
+.about-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fdfaf5;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', sans-serif;
+  color: #3b2e2e;
+}
+
+.about-container h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #2b1d0e;
+}
+
+.about-container h2 {
+  margin-top: 25px;
+  color: #4b382c;
+}
+
+.about-container p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.about-container ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.about-container li {
+  margin-bottom: 10px;
+}
